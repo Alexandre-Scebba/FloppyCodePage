@@ -9,12 +9,12 @@ body {
 	border-radius: 10px;
 	height: 640px;
 	background-color: black;
-	/* background-image: url("./images/gray.png"); */
+	/* background-image: url("images/gray.png"); */
 	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.755);
 }
 body {
 	height: 100%;
-	background-image: url("./images/matrix.webp");
+	background-image: url("images/matrix.webp");
 	/* background: linear-gradient(#000000, #000000, #000000, rgb(9, 255, 0), rgb(9, 255, 0)); */
 }
 
