@@ -32,7 +32,7 @@ let minTopPillarHeight = 100;
 let maxTopPillarHeight = 300;
 let bird;
 let birdImage = new Image();
-birdImage.src = "./images/javascript_pixel_logo.png";
+birdImage.src = "images/javascript_pixel_logo.png";
 let birdImageWidth = 64;
 let birdImageHeight = 64;
 
@@ -57,7 +57,7 @@ let groundImage = new Image();
 groundImage.onload = function () {
 	// The ground image is now loaded
 };
-groundImage.src = "./images/ground.png";
+groundImage.src = "images/ground.png";
 // Physics
 let velocityY = 0; // Bird jump speed
 let pillarsPassed = 0; // Number of pillars passed
@@ -90,8 +90,8 @@ bottomPillarImage.onload = function () {
 		startGame();
 	}
 };
-topPillarImage.src = "./images/ourcode2.png"; // Top pillar image
-bottomPillarImage.src = "./images/ourcode2.png"; // Bottom pillar image
+topPillarImage.src = "images/ourcode2.png"; // Top pillar image
+bottomPillarImage.src = "images/ourcode2.png"; // Bottom pillar image
 
 // Function to draw the tutorial
 function drawTutorial() {
@@ -521,7 +521,7 @@ window.addEventListener("keydown", function (event) {
 		// Start the game when the enter key is pressed
 		if (!gameStarted) {
 			gameStarted = true;
-			myMusic = new sound("./sounds/background.mp3");
+			myMusic = new sound("sounds/background.mp3");
 			myMusic.volume = volume; // Set volume
 			myMusic.play();
 		} else if (bird.dead) {
@@ -533,7 +533,7 @@ window.addEventListener("keydown", function (event) {
 			score = 0; // Reset the score
 			pillarsPassed = 0; // Reset the number of pillars passed
 			myMusic.stop(); // Stop the music when the bird dies
-			myMusic = new sound("./sounds/background.mp3"); // Create a new instance of the music
+			myMusic = new sound("sounds/background.mp3"); // Create a new instance of the music
 			myMusic.volume = volume; // Set volume
 			myMusic.play(); // Start the music again
 		}
@@ -553,9 +553,9 @@ window.addEventListener("keydown", function (event) {
 });
 //Change difficulty using 1, 2, 3 keys
 window.addEventListener("keydown", function (event) {
-	var easySound = new sound("./sounds/Easy.wav");
-	var mediumSound = new sound("./sounds/Medium.wav");
-	var hardSound = new sound("./sounds/Hard.wav");
+	var easySound = new sound("sounds/Easy.wav");
+	var mediumSound = new sound("sounds/Medium.wav");
+	var hardSound = new sound("sounds/Hard.wav");
 
 	// Get all buttons
 	var buttons = document.querySelectorAll("button");
